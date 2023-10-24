@@ -1,0 +1,82 @@
+*{
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(13, 13, 13);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: rgba(0, 0, 0, 0.973);
+    max-width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px rgba(27, 27, 27, 0.816);
+}
+
+#displayArea{
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    padding-bottom: 20px;
+    border-bottom: 2px rgba(128, 128, 128, 0.116) solid;
+}
+
+#displayArea .input{
+    text-align: right;
+    height: 8vh;
+    color: white;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+}
+
+#displayArea .ans{
+    text-align: right;
+    height: 7px;
+    color: rgba(150, 150, 150, 0.925);
+    font-size: larger;
+    line-height: 3;
+    word-wrap: break-word;
+}
+
+.key{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px; 
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(5,60px);
+}
+
+.key button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.key .functionalButton{
+    color: coral;
+}
+
+.functionalButton:hover, .numButton:hover{
+    background-color: rgba(29,29,29,.75);
+}
+
